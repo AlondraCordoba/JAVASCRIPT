@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 JavaScript First Challenge</title>
+    <link rel="stylesheet" href="../bootstrap-4.5.2-dist/css/bootstrap.min.css">
+
+    <body>
+        <div class="jumbotron">
+            <h1 class="display-4 text-center"> JavaScript Fundamentals </h1>
+            <p class="lead text-center"> Coding challenge 1 </p>
+            <hr class="my-4">
+            <p> Calcular IMC </p>
+            <br>
+            <div class="d-flex m-4">
+                <form class="col-6 m-2">
+                    <h5 class="text-center" id="name">MARIO</h5>
+                    <!-- ESTATURA -->
+                    <div class="form-group row">
+                        <label for="kg" class="col-sm-2 col-form-label">Peso (kg): </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="kg" placeholder="Ingrese su peso">
+                        </div>
+                    </div>
+                    <!-- PESO -->
+                    <div class="form-group row">
+                        <label for="m" class="col-sm-2 col-form-label">Estatura (metros): </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="m" placeholder="Ingrese su estatura">
+                        </div>
+                    </div>
+                    <!-- BOTON -->
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-outline-success" type="button" onclick="calcular()" id="calc">Calcular</button>
+                    </div>
+                </form>
+
+                <form class="col-6 m-2">
+                    <h5 class="text-center" id="name2">LUIGI</h5>
+                    <!-- ESTATURA -->
+                    <div class="form-group row">
+                        <label for="kg2" class="col-sm-2 col-form-label">Peso (kg): </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="kg2" placeholder="Ingrese su peso">
+                        </div>
+                    </div>
+                    <!-- PESO -->
+                    <div class="form-group row">
+                        <label for="m" class="col-sm-2 col-form-label">Estatura (metros): </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="m2" placeholder="Ingrese su estatura">
+                        </div>
+                    </div>
+                    <!-- BOTON -->
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-outline-success" type="button" onclick="calcular2()" id="calc2">Calcular</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="d-flex">
+            <div class="col-6">
+                <p>IMC: <span id="imc"></span></p>
+                <p>Lectura: <span id="lectura"></span></p>
+            </div>
+            <div class="col-6">
+                <p>IMC: <span id="imc2"></span></p>
+                <p>Lectura: <span id="lectura2"></span></p>
+            </div>
+        </div>
+
+        <div class="jumbotron" id="container">
+            <p class="lead text-center"> Comparacion IMC </p>
+            <hr class="my-4">
+            <br>
+            <div class="d-flex m-4">
+                <div class="col-6">
+                    <p>Muestra: <span id="muestraMN"></span></p>
+                    <p>Estatura: <span id="estaturaM"></span></p>
+                    <p>Peso: <span id="pesoM"></span></p>
+                    <p>IMC: <span id="imcM"></span></p>
+                </div>
+                <div class="col-6">
+                    <p>Muestra: <span id="muestraLN"></span></p>
+                    <p>Estatura: <span id="estaturaL"></span></p>
+                    <p>Peso: <span id="pesoL"></span></p>
+                    <p>IMC: <span id="imcL"></span></p>
+                </div>
+            </div>
+            <div class="text-center">
+                <!-- BOTON -->
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-outline-info" type="button" onclick="mayorIMC()" id="calc3">Mayor IMC</button>
+                </div>
+                <p>Mayor IMC: <span id="mayor"></span></p>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="../bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+        <!-- Script -->
+        <script src="./script.js"></script>
+
+    </body>
+
+</html>
